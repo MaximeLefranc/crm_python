@@ -1,22 +1,3 @@
 {
-    "_default": {
-        "3": {
-            "first_name": "Maxime",
-            "last_name": "Lefranc",
-            "phone_number": "",
-            "address": "ezd"
-        },
-        "4": {
-            "first_name": "vcb",
-            "last_name": "fbd",
-            "phone_number": "xcvxcv",
-            "address": "xvxv"
-        },
-        "5": {
-            "first_name": "vcxv",
-            "last_name": "cvxv",
-            "phone_number": "xcvxv",
-            "address": "xcvcxv"
-        }
-    }
+    "_default": {}
 }
