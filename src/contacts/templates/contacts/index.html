@@ -9,6 +9,22 @@
     <h1>Mon carnet d'adresse</h1>
     {% for user in users %}
     <h2>{{ user.full_name }}</h2>
-    {% endfor %}
+    {% if user.phone_number %}
+    <p>{{ user.phone_number }}</p>
+    {% endif %} {% if user.address %}
+    <p>{{ user.address }}</p>
+    {% endif %} {% endfor %}
+    <form action="{% url 'add_contact' %}" method="post">
+      {% csrf_token %}
+      <label for="first_name">Prénom</label>
+      <input id="first_name" type="text" name="first_name" />
+      <label for="last_name">Nom</label>
+      <input id="last_name" type="text" name="last_name" />
+      <label for="address">Adresse</label>
+      <textarea name="address" id="address" rows="3"></textarea>
+      <label for="phone_number">Téléphone</label>
+      <input id="phone_number" type="text" name="phone_number" />
+      <button type="submit">Ajouter</button>
+    </form>
   </body>
 </html>
