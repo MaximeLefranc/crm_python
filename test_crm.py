@@ -3,7 +3,7 @@ from tinydb import TinyDB, table
 from tinydb.storages import MemoryStorage
 
 
-from crm import User
+from src.api.crm import User
 
 
 @pytest.fixture

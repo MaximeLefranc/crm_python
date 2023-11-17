@@ -15,7 +15,7 @@ class User:
     phone_number: str = ''
     address: str = ''
 
-    DB: ClassVar = TinyDB(Path(__file__).resolve().parent / 'db.json', indent=4)
+    DB: ClassVar = TinyDB(Path(__file__).resolve().parent.parent.parent / 'db.json', indent=4)
 
     @property
     def full_name(self) -> str:
