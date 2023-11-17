@@ -17,3 +17,12 @@ def add_contact(request):
     user = User(first_name, last_name, phone_number, address)
     user.save()
     return redirect('home')
+
+
+def delete_contact(request):
+    first_name = request.POST.get('first_name')
+    last_name = request.POST.get('last_name')
+    user = User(first_name, last_name)
+    print(user)
+    user.delete()
+    return redirect('home')

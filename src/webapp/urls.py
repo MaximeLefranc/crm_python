@@ -22,4 +22,5 @@ import contacts.views as views
 urlpatterns = [
     path('', views.index, name='home'),
     path('add/', views.add_contact, name='add_contact'),
+    path('delete/', views.delete_contact, name='delete_contact'),
 ]
